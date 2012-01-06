@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  weight: 
+  on: 2012-01-03
+
+two:
+  weight: 
+  on: 2012-01-03

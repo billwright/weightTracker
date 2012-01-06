@@ -1,0 +1,22 @@
+<h1>My weight on <%= @entry.on %> was <%= @entry.weight %></h1>
+
+<h2>Comments</h2>
+
+<%= @entry.comments.each do |comment| %>
+    <p>By: <%= comment.author %></p>
+    <div class="comment">
+        <%= comment.body %>
+    </div>
+    <p>
+        <%= button_to "Delete", [@entry, comment], :confirm => "Are you sure?", :method => :delete %>
+    </p>
+    <hr></hr>
+<% end %>
+
+<%= form_for [@entry, Comment.new] do |form| %>
+    <%= form.label :author, "Name" %>
+    <%= form.text_field :author %>
+    <%= form.text_area :body %>
+    <%= form.submit %>
+<% end %>
+

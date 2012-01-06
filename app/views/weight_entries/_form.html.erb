@@ -1,0 +1,7 @@
+<%= form_for @entry do |form| %>
+    <%= form.error_messages %>
+    
+    <%= form.date_select :on %>
+    <%= form.text_field :weight %>
+    <%= form.submit "Update" %>
+<% end %>

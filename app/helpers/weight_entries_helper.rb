@@ -1,0 +1,2 @@
+module WeightEntriesHelper
+end
