@@ -32,3 +32,4 @@ gem 'jquery-rails'
 # gem 'ruby-debug'
 
 gem 'dynamic_form'
+gem 'mysql2'
