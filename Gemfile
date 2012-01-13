@@ -32,4 +32,4 @@ gem 'jquery-rails'
 # gem 'ruby-debug'
 
 gem 'dynamic_form'
-gem 'mysql2'
+gem 'mysql2', '~> 0.3.7', :group => production
